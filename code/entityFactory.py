@@ -7,7 +7,6 @@ from code.background import Background
 from code.enemy import Enemy
 from code.player import Player
 
-
 class EntityFactory:
     
     @staticmethod
