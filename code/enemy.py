@@ -1,10 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 from code.Const import ENTITY_SHOT_DELAY, ENTITY_SPEED
 from code.enemyShot import EnemyShot
 from code.entity import Entity
-
 
 class Enemy(Entity):
     def __init__(self, name: str, position: tuple):
@@ -13,7 +11,6 @@ class Enemy(Entity):
 
     def move(self):
         self.rect.centerx -= ENTITY_SPEED[self.name]
-
 
     def shoot(self):
         self.shot_delay -= 1

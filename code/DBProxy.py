@@ -22,5 +22,3 @@ class DBProxy:
     
     def close(self):
         return self.connection.close()
-    
-    
